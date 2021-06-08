@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t tangelogamesisrael/docker-react -f Dockerfile.dev .
 script:
-  - docker run -e CI=true USERNAME/docker-react npm run test
+  - docker run -e CI=true tangelogamesisrael/docker-react npm run test
 language: generic
